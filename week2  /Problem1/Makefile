@@ -1,14 +1,11 @@
-Problem1 HW Bayu : Probelm1 HW Bayu . o
-g ++ Problem1 HW Bayu . o -o Problem1 HW Bayu
-
-Problem1 HW Bayu . o : Problem1 HW Bayu.cpp
-g++ -c Problem1 HW Bayu.cpp -o Problem1 HW Bayu.o
+all:
+	g++ -o Payslip_Employee Payslip_Employee.cpp
 
 dump:
-objdump -d Problem1 HW Bayu > Problem1 HW Bayu.asm
+	objdump -d Payslip_Employee > Payslip_Employee.asm
 
 clean:
-rm -f Problem1 HW Bayu.o Problem1 HW Bayu
+	rm -f Payslip_Employee.o Payslip_Employee
 
-run: Problem1 HW Bayu
-./Problem1 HW Bayu
+run: Payslip_Employee
+	./Payslip_Employee
