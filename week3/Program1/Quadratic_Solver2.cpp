@@ -14,15 +14,15 @@ void displayResult(double num1, double num2, double num3, double discriminant) {
     if (discriminant > 0) { //if the discriminant is positive
         double x1 = (-num2 + sqrt(discriminant)) / (2 * num1);
         double x2 = (-num2 - sqrt(discriminant)) / (2 * num1);
-        cout << "The polynomial has two distinct real roots: " << endl;
+        cout << "x1 and x2 are real and distinct." << endl;
         cout << "x1 = " << x1 << endl;
         cout << "x2 = " << x2 << endl;
     } else if (discriminant == 0) { //if the discriminant is = 0
         double x = -num2 / (2 * num1);
-        cout << "The polynomial has one distinct real root: " << endl;
+        cout << "x1 and x2 are real and equal." << endl;
         cout << "x = " << x << endl;
     } else { //if the dicriminant is negative
-        cout << "The polynomial has no distinct roots or has complex roots." << endl;
+        cout << "x1 and x2 are imaginary." << endl;
     }
 }
 //asking the user to input the coefficients and declaring the variables 
