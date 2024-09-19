@@ -1,11 +1,18 @@
-all:
-	g++ -o Payslip_Employee Payslip_Employee.cpp
+CXX = g++
+CXXFLAGS = -Wall
+TARGET = Payslip_Employee
+SRC = Payslip_Employee.cpp
 
-dump:
-	objdump -d Payslip_Employee > Payslip_Employee.asm
+all: $(TARGET)
 
-clean:
-	rm -f Payslip_Employee.o Payslip_Employee
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
-run: Payslip_Employee
-	./Payslip_Employee
+test: $(TARGET)
+	./$(TARGET) test
+
+clean: 
+	rm -f $(TARGET)
+	
+run: $(TARGET)
+	./$(TARGET) 
