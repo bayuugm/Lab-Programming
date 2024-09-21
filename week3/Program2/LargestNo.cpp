@@ -20,9 +20,9 @@ void displayResult(int a, int b, int c, int largest){ //function to display the 
 }
 
 int main(){ //asking the user for input and declaring the variables a,b,c as integers.
-    int a = getInput("Enter the value of x= ");
-    int b = getInput("Enter the value of y= ");
-    int c = getInput("Enter the value of z= ");
+    int a = getInput("Enter the value of x = ");
+    int b = getInput("Enter the value of y = ");
+    int c = getInput("Enter the value of z = ");
     int largest;
     displayResult(a,b,c,largest);
 
