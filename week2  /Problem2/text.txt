@@ -1,1 +1,26 @@
+Input :
+A = 1
+B = 4
+C = 1
 
+Expected Output:
+The polynomial has two distinct real roots: 
+x1 = -0.267949
+x2 = -3.73205
+
+Input :
+A = 1
+B = 2
+C = 1
+
+Expected Output:
+The polynomial has one distinct real root: 
+x = -1
+
+Input :
+A = 4
+B = 4
+C = 2
+
+Expected Output:
+The polynomial has no distinct roots or has complex roots.
