@@ -1,5 +1,5 @@
-input_number = 4
-input_number = 10
+Input : 4
 
-Input : < input_number >
-Output : < expected_output >
+Output : 
+1 + 2 + 3 + 4 = 10
+Sum : 10
