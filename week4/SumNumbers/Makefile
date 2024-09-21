@@ -5,4 +5,4 @@ sum.o: sum.cpp
 run: sum
 	./main
 clean:
-	del sum.o sum.exe
+	rm -f sum.o sum.exe
