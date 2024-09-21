@@ -17,13 +17,13 @@ int main(){
             if(i == 1){
                 cout << i;
             }else{
-                cout << "+" << i;
+                cout << " + " << i;
             }
             
         }
         cout << " = " << sum << endl;
 
-        cout << "The Sum: " << sum << endl;
+        cout << "Sum: " << sum << endl;
         
     }
 
