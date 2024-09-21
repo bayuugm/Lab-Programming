@@ -4,7 +4,7 @@ Bayu
 300000
 250000
 
-Output:
+Expected Output:
 Payslip for Employee
 ------------------
 Name: Bayu
@@ -14,4 +14,35 @@ Installment Fee: Rp 300000
 Insurance Fee: Rp  250000
 Net Salary: Rp 15450000
 
+Input:
+Hendra
+1500
+190
+360
+
+Expected Output:
+Payslip for Employee
+------------------
+Name: Hendra
+Gross Salary: Rp 1500
+Tax(20%): Rp  300
+Installment Fee: Rp 190
+Insurance Fee: Rp  360
+Net Salary: Rp 650
+
+Input: 
+Leo
+900000000
+800000
+700000
+
+Expected Output:
+Payslip for Employee
+------------------
+Name: Leo
+Gross Salary: Rp 900000000
+Tax(20%): Rp  180000000
+Installment Fee: Rp 800000
+Insurance Fee: Rp  700000
+Net Salary: Rp 718500000
 
