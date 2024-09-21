@@ -1,1 +1,7 @@
+Input :
+x = 109
+y = 990
+z = 718
+
+Expected Output:
 
