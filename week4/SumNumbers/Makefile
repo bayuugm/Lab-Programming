@@ -3,6 +3,6 @@ sum: sum.o
 sum.o: sum.cpp
 	g++ -c sum.cpp -o sum.o
 run: sum
-	./main
+	./sum
 clean:
 	rm -f sum.o sum.exe
