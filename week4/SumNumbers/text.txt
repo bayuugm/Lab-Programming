@@ -3,3 +3,14 @@ Input : 4
 Output : 
 1 + 2 + 3 + 4 = 10
 Sum : 10
+
+Input : -1
+
+Output : 
+error: please enter a positive integer!
+
+Input : 25
+
+Output :
+1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 + 13 + 14 + 15 + 16 + 17 + 18 + 19 + 20 + 21 + 22 + 23 + 24 + 25 = 325
+Sum: 325
