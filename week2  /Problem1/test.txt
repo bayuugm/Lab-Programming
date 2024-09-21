@@ -1,1 +1,17 @@
+Input : 
+Bayu
+20000000
+300000
+250000
+
+Output:
+Payslip for Employee
+------------------
+Name: Bayu
+Gross Salary: Rp 20000000
+Tax(20%): Rp  4000000
+Installment Fee: Rp 300000
+Insurance Fee: Rp  250000
+Net Salary: Rp 15450000
+
 
