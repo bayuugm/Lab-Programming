@@ -28,6 +28,7 @@ int main() {
     for(const string& s : result) {
             cout << s << " ";
     }
+    cout << endl;
 return 0;
 }
 
