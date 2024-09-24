@@ -26,7 +26,7 @@ int main() {
     }
 
     for(const string& s : result) {
-            cout << s << ",";
+            cout << s << " ";
     }
 return 0;
 }
