@@ -19,12 +19,12 @@ int main() {
             result.push_back("Buzz");
         }else
         {
-            result.push_back(to_string(i));
+            result.push_back(std::to_string(i));
             
         }
     }
 
-    for(const string& s : result) {
+    for(const std::string& s : result) {
             std::cout << s << " ";
     }
 return 0;
