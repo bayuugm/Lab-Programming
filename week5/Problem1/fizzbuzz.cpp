@@ -1,11 +1,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
-using namespace std;
 
 int main() {
 
-    vector<string> result;
+    std::vector<string> result;
 
     for(int i = 1;i<=100; i++){
         if(i % 3 == 0 && i % 5 == 0)
@@ -26,7 +25,7 @@ int main() {
     }
 
     for(const string& s : result) {
-            cout << s << " ";
+            std::cout << s << " ";
     }
 return 0;
 }
