@@ -5,6 +5,8 @@ int main() {
     int n = 5
 
     std::vector<int> a(n) = {1, 2, 3, 4, 5,};
+    std::vector<int> expectedOutput = Array: 1 2 3 4 5
+Reversed Array: 5 4 3 2 1
 
     std::cout << "Array: ";
     for (int i = 0; i <n; i++) {
