@@ -1,11 +1,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
-using namespace std;
 
 int main() {
-    vector<string> result;
-    vector<string> expectedOutput = {
+    std::vector<std::string> result;
+    std::vector<std::string> expectedOutput = {
         "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz",
         "11", "Fizz", "13", "14", "FizzBuzz", "16", "17", "Fizz", "19", "Buzz",
         "Fizz", "22", "23", "Fizz", "Buzz", "26", "Fizz", "28", "29", "FizzBuzz",
@@ -26,18 +25,22 @@ int main() {
         } else if(i % 5 == 0) {
             result.push_back("Buzz");
         } else {
-            result.push_back(to_string(i));
+            result.push_back(std::to_string(i));
         }
     }
+
+    for(const std::string& s : result) {
+        std::cout << s << " ";
+    }
+    std::cout << std::endl;
 
     bool testPassed = (result == expectedOutput);
 
     if(testPassed) {
-        cout << "Test Successful!" << endl;
+        std::cout << "Test Successful" << std::endl;
     } else {
-        cout << "Error:Test Unsuccessful" << endl;
+        std::cout << "Test Unsuccessful" << std::endl;
     }
 
     return 0;
 }
-
