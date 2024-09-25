@@ -17,27 +17,26 @@ int main() {
         "91", "92", "Fizz", "94", "Buzz", "Fizz", "97", "98", "Fizz", "Buzz"
     };
 
-    for(int i = 1; i <= 100; i++) {
-        if(i % 3 == 0 && i % 5 == 0) {
+    for (int i = 1; i <= 100; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
             result.push_back("FizzBuzz");
-        } else if(i % 3 == 0) {    
+        } else if (i % 3 == 0) {
             result.push_back("Fizz");
-        } else if(i % 5 == 0) {
+        } else if (i % 5 == 0) {
             result.push_back("Buzz");
         } else {
             result.push_back(std::to_string(i));
         }
     }
 
-    }
-    std::cout << std::endl;
-
     bool testPassed = (result == expectedOutput);
 
-    if(testPassed) {
-        std::cout << "TEST SUCCESFUL!" << std::endl;
+    if (testPassed) {
+        std::cout << "TEST SUCCESSFUL!" << std::endl;
     } else {
-        std::cout << "ERROR: TEST UNSUCCESFUL!" << std::endl;
+        std::cout << "ERROR: TEST UNSUCCESSFUL!" << std::endl;
+        }
+        std::cout << std::endl;
     }
 
     return 0;
