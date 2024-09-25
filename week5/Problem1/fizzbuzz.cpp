@@ -4,7 +4,7 @@
 
 int main() {
 
-    std::vector<string> result;
+    std::vector<std::string> result;
 
     for(int i = 1;i<=100; i++){
         if(i % 3 == 0 && i % 5 == 0)
