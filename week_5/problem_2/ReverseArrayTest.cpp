@@ -4,26 +4,9 @@
 int main() {
     int n = 5
 
-    std::vector<int> a(5) = {1, 2, 3, 4, 5,};
-    
-    for (int i = 0; i < n; i++) {
-        std::cin >> a[i]; 
-    }
+    std::vector<int> a(n) = {1, 2, 3, 4, 5,};
 
-    bool check = true;
-    for (int i = 0; i < n; i++) {
-        if(a[i] <= 0 ) {
-            check = false;
-            break;
-        }
-    } 
-
-    if (check == false) {
-        std::cout << "Error: enter a positive integer" << std::endl;
-        return 0;
-    }else{
-
-    }std::cout << "Array: ";
+    std::cout << "Array: ";
     for (int i = 0; i <n; i++) {
         std::cout << a[i] << " ";
     }
