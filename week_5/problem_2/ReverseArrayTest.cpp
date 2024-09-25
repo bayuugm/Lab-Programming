@@ -2,18 +2,9 @@
 #include <vector>
 
 int main() {
-    int n;
-    std::cout << "Enter the size of the vector: ";
-    std::cin >> n;
+    int n = 5
 
-    if (n <= 0) {
-        std::cout << "Error: Size of the vector should be positive." << std::endl;
-        return 0;
-    }
-
-    std::vector<int> a(n);
-    std::cout << "Enter the numbers for the array: ";
-
+    std::vector<int> a(5) = {1, 2, 3, 4, 5,};
     
     for (int i = 0; i < n; i++) {
         std::cin >> a[i]; 
