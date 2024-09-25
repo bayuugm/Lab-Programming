@@ -2,16 +2,25 @@
 #include <vector>
 
 int main() {
-    std::vector<int> a(5); 
-    std::cout << "Enter 5 numbers for the array: ";
+    int n;
+    std::cout << "Enter the size of the vector: ";
+    std::cin >> n;
+
+    if (n <= 0) {
+        std::cout << "Error: Size of the vector should be positive." << std::endl;
+        return 0;
+    }
+
+    std::vector<int> a(n);
+    std::cout << "Enter the numbers for the array: ";
 
     
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < n; i++) {
         std::cin >> a[i]; 
     }
 
     bool check = true;
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < n; i++) {
         if(a[i] <= 0 ) {
             check = false;
             break;
@@ -24,14 +33,14 @@ int main() {
     }else{
 
     }std::cout << "Array: ";
-    for (int i = 0; i <5; i++) {
+    for (int i = 0; i <n; i++) {
         std::cout << a[i] << " ";
     }
 
     std::cout << std::endl;
 
     std::cout << "Reversed Array: ";
-    for (int i = 4; i >= 0; i--){
+    for (int i = n-1; i >= 0; i--){
         std::cout << a[i] << " ";
     }
 
