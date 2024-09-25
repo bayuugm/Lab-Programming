@@ -29,17 +29,15 @@ int main() {
         }
     }
 
-    for(const std::string& s : result) {
-        std::cout << s << " ";
     }
     std::cout << std::endl;
 
     bool testPassed = (result == expectedOutput);
 
     if(testPassed) {
-        std::cout << "Test Successful" << std::endl;
+        std::cout << "TEST SUCCESFUL!" << std::endl;
     } else {
-        std::cout << "Test Unsuccessful" << std::endl;
+        std::cout << "ERROR: TEST UNSUCCESFUL!" << std::endl;
     }
 
     return 0;
