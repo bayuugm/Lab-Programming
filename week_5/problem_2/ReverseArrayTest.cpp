@@ -20,5 +20,14 @@ int main() {
 
     std::cout << std::endl;
 
+    bool testPassed = (result == expectedOutput);
+
+    if (testPassed) {
+        std::cout << "TEST SUCCESSFUL!" << std::endl;
+    } else {
+        std::cout << "ERROR: TEST UNSUCCESSFUL!" << std::endl;
+        }
+        std::cout << std::endl;
+    
     return 0;
 }
