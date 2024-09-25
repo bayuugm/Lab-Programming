@@ -37,7 +37,6 @@ int main() {
         std::cout << "ERROR: TEST UNSUCCESSFUL!" << std::endl;
         }
         std::cout << std::endl;
-    }
 
     return 0;
 }
