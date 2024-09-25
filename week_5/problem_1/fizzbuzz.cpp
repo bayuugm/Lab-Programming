@@ -25,7 +25,7 @@ int main() {
     }
 
     for(const std::string& s : result) {
-            std::cout << s << " ";
+            std::cout << s << " " << std::endl;
     }
 return 0;
 }
