@@ -12,7 +12,7 @@ int main() {
     std::vector<int> resultArray;
     for (int i = 0; i < n; i++) {
         std::cout << a[i] << " ";
-        Array.push_back(a[i]);  
+        resultArray.push_back(a[i]);  
     }
 
     std::cout << std::endl;
