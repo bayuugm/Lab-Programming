@@ -9,33 +9,35 @@ struct students {
 };
 
 int main(){
-    int i;
+    int N;
 
     cout << "Enter The amount of Students: ";
-    cin >> i;
+    cin >> N;
 
     if(i > 50){
         cout << "Maximum amount of students is 50, re-enter amount of students: ";
-        cin >> i;
+        cin >> N;
     }
 
     struct students data[50];
 
-    for(int j = 0; j < i;j++){
-        cout << "Enter the data of student " << j+1 << endl;
+    for(int i = 0; i < N;i++){
+        cout << "Enter the data of student " << i+1 << endl;
         cout << "Enter NIM: ";
-        cin >> data[j].nim;
+        cin >> data[i].nim;
         cout << "UTS Score: ";
-        cin >> data[j].uts;
+        cin >> data[i].uts;
         cout << "UAS Score: ";
-        cin >> data[j].uas;
+        cin >> data[i].uas;
 
-        data[j].average = (data[j].uts + data[j].uas) / 2;
+        data[i].average = (data[i].uts + data[i].uas) / 2;
     }
 
-    for(int j = 0; j < i;j++){
-        cout << "LIST OF STUDENT SCORES:" << endl;
-        cout << "NIM: " << data[j].nim << "\t" << "AVERAGE: " << data[j].average << endl;
+        cout << "LIST OF STUDENT SCORES" << endl;
+    for(int i = 0; i < N;i++){
+        cout << "------------" << endl;
+        cout << "NIM: " << data[i].nim << endl;
+        cout << "AVERAGE: " << data[i].average << endl;
     }
 
 
