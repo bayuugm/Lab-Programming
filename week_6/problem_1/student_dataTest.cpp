@@ -25,7 +25,6 @@ int main(){
   data[3].uts = 90.85;
   data[3].uas = 45.9;
 
-    int expectedOutput = 0;
 
     for(int i = 0; i < N;i++){
         data[i].average = (data[i].uts + data[i].uas) / 2;
