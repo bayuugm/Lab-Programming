@@ -9,10 +9,9 @@ struct students {
 };
 
 int main(){
-    int i = 4
-    const int max = 50;
+    int i = 4;
 
-    struct students data[max];
+    struct students data[50];
   data[0].nim = 446;
   data[0].uts = 90;
   data[0].uas = 95;
