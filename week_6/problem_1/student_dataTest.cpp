@@ -30,7 +30,7 @@ int main() {
 		data[i].average = (data[i].uts + data[i].uas) / 2;
 	}
 
-	struct student expectedData[N];
+	struct students expectedData[N];
 	expectedData[0].nim = 446;
 	expectedData[0].uts = 90;
 	expectedData[0].uas = 95;
@@ -48,10 +48,13 @@ int main() {
 	expectedData[3].uas = 45.9;
 	expectedData[3].average = 68.375;
 
-	if(
-    if(testPassed){
-        
+	bool testPassed = (data == expectedData);
 
+    if (testPassed) {
+        std::cout << "TEST SUCCESSFUL!" << std::endl;
+    } else {
+        std::cout << "ERROR: TEST UNSUCCESSFUL!" << std::endl;
+    }
 
 return 0;
 
