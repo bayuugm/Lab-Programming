@@ -30,10 +30,12 @@ int main(){
         data[i].average = (data[i].uts + data[i].uas) / 2;
     }
 
+    cout << "LIST OF STUDENT SCORES" << endl;
     for(int i = 0; i < N;i++){
-        cout << "NIM: " << data[i].nim << "\t" << "AVERAGE: " << data[i].average << endl;
+        cout << "------------" << endl;
+        cout << "NIM: " << data[i].nim << endl;
+        cout << "AVERAGE: " << data[i].average << endl;
     }
-
 
     return 0;
     
