@@ -10,17 +10,16 @@ struct students {
 
 int main(){
     int i;
-    const int max = 50;
 
     cout << "Enter The amount of Students: ";
     cin >> i;
 
-    if(i > max){
+    if(i > 50){
         cout << "Maximum amount of students is 50, re-enter amount of students: ";
         cin >> i;
     }
 
-    struct students data[max];
+    struct students data[50];
 
     for(int j = 0; j < i;j++){
         cout << "Enter the data of student " << j+1 << endl;
