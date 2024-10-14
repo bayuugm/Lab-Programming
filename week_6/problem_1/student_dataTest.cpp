@@ -9,7 +9,7 @@ struct students {
 };
 
 int main(){
-    int i = 4;
+    int N = 4;
 
     struct students data[50];
   data[0].nim = 446;
@@ -26,13 +26,12 @@ int main(){
   data[3].uas = 45.9;
 
 
-    for(int j = 0; j < i;j++){
-        data[j].average = (data[j].uts + data[j].uas) / 2;
+    for(int i = 0; i < N;i++){
+        data[i].average = (data[i].uts + data[i].uas) / 2;
     }
 
-    for(int j = 0; j < i;j++){
-        cout << "LIST OF STUDENT SCORES:" << endl;
-        cout << "NIM: " << data[j].nim << "\t" << "AVERAGE: " << data[j].average << endl;
+    for(int i = 0; i < N;i++){
+        cout << "NIM: " << data[i].nim << "\t" << "AVERAGE: " << data[i].average << endl;
     }
 
 
