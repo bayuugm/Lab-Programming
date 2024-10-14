@@ -37,6 +37,9 @@ int main(){
         cout << "AVERAGE: " << data[i].average << endl;
     }
 
+    bool testPassed = True 
+
+    
     return 0;
     
 }
