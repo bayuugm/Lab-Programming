@@ -14,7 +14,7 @@ int main(){
     cout << "Enter The amount of Students: ";
     cin >> N;
 
-    if(i > 50){
+    if(N > 50){
         cout << "Maximum amount of students is 50, re-enter amount of students: ";
         cin >> N;
     }
