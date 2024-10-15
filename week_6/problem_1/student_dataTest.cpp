@@ -48,7 +48,7 @@ int main() {
 	expectedData[3].uas = 45.9;
 	expectedData[3].average = 68.375;
 
-	bool testPassed = true
+	bool testPassed = true;
 	for (int i=0; i < N; i++){
 		if (data[i].nim != expectedData[i].nim || data[i].uts != expectedData[i].uts || data[i].uas != expectedData[i].uas || data[i].average != expectedData[i].average) {
 			testPassed = false;
