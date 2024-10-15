@@ -9,7 +9,7 @@ struct students {
 };
 
 int main() {
-	int N = 4;
+	const int N = 4;
 
 	struct students data[N];
 	data[0].nim = 446;
@@ -50,7 +50,10 @@ int main() {
 
 	bool testPassed = true;
 	for (int i=0; i < N; i++){
-		if (data[i].nim != expectedData[i].nim || data[i].uts != expectedData[i].uts || data[i].uas != expectedData[i].uas || data[i].average != expectedData[i].average) {
+		if (data[i].nim != expectedData[i].nim 
+        || data[i].uts != expectedData[i].uts 
+        || data[i].uas != expectedData[i].uas 
+        || data[i].average != expectedData[i].average) {
 			testPassed = false;
 			break;
 		}
