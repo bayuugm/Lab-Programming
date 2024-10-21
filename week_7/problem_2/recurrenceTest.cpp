@@ -21,9 +21,13 @@ int main(){
 
     cout << "Factorial of " << num << " = " << result << endl;
 
-    bool testPassed = true;
+    bool testPassed = result == expectedResult;
 
     if (testPassed) {
-      cout 
+      cout << "TEST SUCCESSFUL" << endl;
+        else {
+        cout << "TEST UNSUCCESSFUL" << endl;
+        }
+    }
     
 }
