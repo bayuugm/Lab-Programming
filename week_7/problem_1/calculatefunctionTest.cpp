@@ -13,7 +13,7 @@ int main() {
     float num1 = 5;
     float num2 = 10;
     float result;
-    char operation = +;
+    char operation = '+';
     float expectedResult = 15;
 
     if (operation == '+') {
@@ -25,6 +25,16 @@ int main() {
     } else {
         cout << "Invalid operation!" << endl;
     }
+
+    bool testPassed = (result == expectedResult);
+
+    if (testPassed) {
+        std::cout << "TEST SUCCESSFUL!" << std::endl;
+    } else {
+        std::cout << "ERROR: TEST UNSUCCESSFUL!" << std::endl;
+        }
+        std::cout << std::endl;
+
 
     return 0;
 }
