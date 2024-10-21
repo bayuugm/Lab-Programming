@@ -1,20 +1,20 @@
-calculatefunction: calculatefunction.o
-	g++ calculatefunction.o -o calculatefunction.exe
+recurrence: recurrence.o
+	g++ recurrence.o -o recurrence.exe
 
-calculatefunction.o: calculatefunction.cpp
-	g++ -c calculatefunction.cpp -o calculatefunction.o
+recurrence.o: recurrence.cpp
+	g++ -c recurrence.cpp -o recurrence.o
 
-run: calculatefunction
-	./calculatefunction.exe
+run: recurrence
+	./recurrence.exe
 
-calculatefunctionTest: calculatefunctionTest.o
-	g++ calculatefunctionTest.o -o calculatefunctionTest.exe
+recurrenceTest: recurrenceTest.o
+	g++ recurrenceTest.o -o recurrenceTest.exe
 
-calculatefunctionTest.o: calculatefunctionTest.cpp
-	g++ -c calculatefunctionTest.cpp -o calculatefunctionTest.o
+recurrenceTest.o: recurrenceTest.cpp
+	g++ -c recurrenceTest.cpp -o recurrenceTest.o
 
-test: calculatefunctionTest
-	./calculatefunctionTest.exe
+test: recurrenceTest
+	./recurrenceTest.exe
 
 clean:
-	rm -f calculatefunction.o calculatefunctionTest.o calculatefunction.exe calculatefunctionTest.exe
+	rm -f recurrence.o recurrenceTest.o recurrence.exe recurrenceTest.exe
