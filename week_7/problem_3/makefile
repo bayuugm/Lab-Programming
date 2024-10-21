@@ -1,20 +1,20 @@
-recurrence: recurrence.o
-	g++ recurrence.o -o recurrence.exe
+gcdfunction: gcdfunction.o
+	g++ gcdfunction.o -o gcdfunction.exe
 
-recurrence.o: recurrence.cpp
-	g++ -c recurrence.cpp -o recurrence.o
+gcdfunction.o: gcdfunction.cpp
+	g++ -c gcdfunction.cpp -o gcdfunction.o
 
-run: recurrence
-	./recurrence.exe
+run: gcdfunction
+	./gcdfunction.exe
 
-recurrenceTest: recurrenceTest.o
-	g++ recurrenceTest.o -o recurrenceTest.exe
+gcdfunctionTest: gcdfunctionTest.o
+	g++ gcdfunctionTest.o -o gcdfunctionTest.exe
 
-recurrenceTest.o: recurrenceTest.cpp
-	g++ -c recurrenceTest.cpp -o recurrenceTest.o
+gcdfunctionTest.o: gcdfunctionTest.cpp
+	g++ -c gcdfunctionTest.cpp -o gcdfunctionTest.o
 
-test: recurrenceTest
-	./recurrenceTest.exe
+test: gcdfunctionTest
+	./gcdfunctionTest.exe
 
 clean:
-	rm -f recurrence.o recurrenceTest.o recurrence.exe recurrenceTest.exe
+	rm -f gcdfunction.o gcdfunctionTest.o gcdfunction.exe gcdfunctionTest.exe
