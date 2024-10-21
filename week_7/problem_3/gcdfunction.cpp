@@ -19,7 +19,6 @@ int main(){
     } else if (num1 == 0 && num2 == 0) {
         cout << "error: GCD is undefined when both numbers are zero." << endl;
     } else {
-        // Compute and display the GCD
         int result = A(num1, num2);
         cout << "GCD of " << num1 << " and " << num2 << " is: " << result << endl;
     }
