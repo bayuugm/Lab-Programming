@@ -42,6 +42,20 @@ int main(){
     };
     int size = sizeof(data) / sizeof(data[0]);
 
+    Students expectedData[] = {
+        {9970293945, "Alivia Rahma Pramesti", 70},
+        {9970272750, "Achmad Yaumil Fadjri R.", 60},
+        {9965653989, "Arief Budiman", 60},
+        {9963959682, "Rio Alfandra", 55},
+        {9960312699, "Handi Ramadhan", 90},
+        {9952382180, "Ari Lutfianto", 65},
+        {9950310962, "Ronaldo Valentino Uneputty", 80},
+
+    if (testPassed) {
+        std::cout << "TEST SUCCESSFUL!" << std::endl;
+    } else {
+        std::cout << "ERROR: TEST UNSUCCESSFUL!" << std::endl;
+    }
 
 
 
