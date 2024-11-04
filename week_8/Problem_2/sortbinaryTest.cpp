@@ -48,11 +48,6 @@ void binarySearch(Students data[], int size) {
             j = k - 1;
         }
     }
-    if (!found) {
-        cout << "Not Found" << endl;
-    } else {
-        cout << "Found, Value: " << data[k].Value << endl;
-    }
 }
 
 int main() {
@@ -69,4 +64,12 @@ int main() {
 
     selectionSortNISN(data, size);
     binarySearch(data, size);
+
+    if (found) {
+        std::cout << "TEST SUCCESSFUL!" << std::endl;
+    } else {
+        std::cout << "ERROR: TEST UNSUCCESSFUL!" << std::endl;
+    }
+
+    return 0;
 }
