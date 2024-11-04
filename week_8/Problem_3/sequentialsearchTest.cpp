@@ -8,19 +8,19 @@ struct Students {
     int Value;
 };
 
-void sequentialSearch(Students data[], int size){
+bool sequentialSearch(Students data[], int size) {
     bool found = false;
     int query = 60;
-    for(int i = 0; i < size; i++){
-        if(data[i].Value == query){
+    for (int i = 0; i < size; i++) {
+        if (data[i].Value == query) {
             data[i].Nama = "Joko";
             found = true;
         }
     }
-    if(!found){
-        cout << "Not Found";
+    if (!found) {
+        cout << "Not Found" << endl;
     }
-
+    return found;
 }
 
 void display(Students data[], int size) {
@@ -30,7 +30,7 @@ void display(Students data[], int size) {
     cout << endl;
 }
 
-int main(){
+int main() {
     Students data[] = {
         {9960312699, "Handi Ramadhan", 90},
         {9963959682, "Rio Alfandra", 55},
@@ -42,7 +42,19 @@ int main(){
     };
     int size = sizeof(data) / sizeof(data[0]);
 
-    sequentialSearch(data,size);
-    display(data,size);
+    bool found = sequentialSearch(data, size);
+    display(data, size);
 
+    bool testPassed = false;
+    for (int i = 0; i < size; i++) {
+        if (data[i].Nama == "Joko") {
+            testPassed = true;
+            break;
+        }
+    }
+    if (testPassed && found) {
+        cout << "TEST SUCCESSFUL!" << endl;
+    } else {
+        cout << "ERROR: TEST UNSUCCESSFUL!" << endl;
+    }
 }
