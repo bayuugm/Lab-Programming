@@ -1,20 +1,20 @@
-calculatefunction: calculatefunction.o
-	g++ calculatefunction.o -o calculatefunction.exe
+sortbinary: sortbinary.o
+	g++ sortbinary.o -o sortbinary.exe
 
-calculatefunction.o: calculatefunction.cpp
-	g++ -c calculatefunction.cpp -o calculatefunction.o
+sortbinary.o: sortbinary.cpp
+	g++ -c sortbinary.cpp -o sortbinary.o
 
-run: calculatefunction
-	./calculatefunction.exe
+run: sortbinary
+	./sortbinary.exe
 
-calculatefunctionTest: calculatefunctionTest.o
-	g++ calculatefunctionTest.o -o calculatefunctionTest.exe
+sortbinaryTest: sortbinaryTest.o
+	g++ sortbinaryTest.o -o sortbinaryTest.exe
 
-calculatefunctionTest.o: calculatefunctionTest.cpp
-	g++ -c calculatefunctionTest.cpp -o calculatefunctionTest.o
+sortbinaryTest.o: sortbinaryTest.cpp
+	g++ -c sortbinaryTest.cpp -o sortbinaryTest.o
 
-test: calculatefunctionTest
-	./calculatefunctionTest.exe
+test: sortbinaryTest
+	./sortbinaryTest.exe
 
 clean:
-	rm -f calculatefunction.o calculatefunctionTest.o calculatefunction.exe calculatefunctionTest.exe
+	rm -f sortbinary.o sortbinaryTest.o sortbinary.exe sortbinaryTest.exe
