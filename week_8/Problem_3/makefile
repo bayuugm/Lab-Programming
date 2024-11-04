@@ -1,20 +1,20 @@
-calculatefunction: calculatefunction.o
-	g++ calculatefunction.o -o calculatefunction.exe
+sequentialsearch: sequentialsearch.o
+	g++ sequentialsearch.o -o sequentialsearch.exe
 
-calculatefunction.o: calculatefunction.cpp
-	g++ -c calculatefunction.cpp -o calculatefunction.o
+sequentialsearch.o: sequentialsearch.cpp
+	g++ -c sequentialsearch.cpp -o sequentialsearch.o
 
-run: calculatefunction
-	./calculatefunction.exe
+run: sequentialsearch
+	./sequentialsearch.exe
 
-calculatefunctionTest: calculatefunctionTest.o
-	g++ calculatefunctionTest.o -o calculatefunctionTest.exe
+sequentialsearchTest: sequentialsearchTest.o
+	g++ sequentialsearchTest.o -o sequentialsearchTest.exe
 
-calculatefunctionTest.o: calculatefunctionTest.cpp
-	g++ -c calculatefunctionTest.cpp -o calculatefunctionTest.o
+sequentialsearchTest.o: sequentialsearchTest.cpp
+	g++ -c sequentialsearchTest.cpp -o sequentialsearchTest.o
 
-test: calculatefunctionTest
-	./calculatefunctionTest.exe
+test: sequentialsearchTest
+	./sequentialsearchTest.exe
 
 clean:
-	rm -f calculatefunction.o calculatefunctionTest.o calculatefunction.exe calculatefunctionTest.exe
+	rm -f sequentialsearch.o sequentialsearchTest.o sequentialsearch.exe sequentialsearchTest.exe
