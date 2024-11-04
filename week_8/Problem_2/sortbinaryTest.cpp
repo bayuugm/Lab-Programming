@@ -32,7 +32,7 @@ void selectionSortNISN(Students data[], int size) {
     display(data, size);
 }
 
-void binarySearch(Students data[], int size) {
+bool binarySearch(Students data[], int size) {
     bool found = false;
     int i = 0;
     int j = size - 1;
@@ -48,6 +48,7 @@ void binarySearch(Students data[], int size) {
             j = k - 1;
         }
     }
+    return found;
 }
 
 int main() {
@@ -63,7 +64,7 @@ int main() {
     int size = sizeof(data) / sizeof(data[0]);
 
     selectionSortNISN(data, size);
-    binarySearch(data, size);
+    bool found = binarySearch(data, size);
 
     if (found) {
         std::cout << "TEST SUCCESSFUL!" << std::endl;
