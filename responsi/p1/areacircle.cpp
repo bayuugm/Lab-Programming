@@ -3,7 +3,8 @@ using namespace std;
 
 int main()
 {
-  float area, radius;
+  double area; 
+  float radius;
   float pi = 3.14;
 
   cout << "Enter the radius of the circle: " << endl;
