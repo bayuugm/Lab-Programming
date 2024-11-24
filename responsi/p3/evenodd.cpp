@@ -13,7 +13,7 @@ int main(){
   }
 
   int countEven = 0;
-  int coutnOdd = 0;
+  int countOdd = 0;
 
   for(int i = 0;i < size;i++){
     if(A[i] % 2 == 0){
