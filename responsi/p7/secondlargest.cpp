@@ -29,3 +29,17 @@ int main() {
     
     return 0;
 }
+
+//This program finds the second largest number in a list of integers entered by the user. 
+//It first prompts the user to enter the number of elements, n, and then takes n integers as input into an array called numbers. 
+//The program initializes largest to the first element of the array and secondLargest to -1. 
+//It then iterates through the rest of the array: if a number is greater than largest, it updates secondLargest to the previous value of 
+//largest and assigns the new number to largest. Otherwise, if the number is greater than secondLargest but less than largest, 
+//it updates secondLargest to the current number. After completing the loop, it prints the value of secondLargest, which holds the second largest number in the array.
+
+
+
+
+
+
+
