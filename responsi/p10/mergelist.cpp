@@ -2,10 +2,13 @@
 using namespace std;
 
 void bubbleSort(int arr[], int size) {
+    int temp;
     for (int i = 0; i < size - 1; i++) {
         for (int j = 0; j < size - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
-                swap(arr[j], arr[j + 1]);
+                temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
             }
         }
     }
@@ -37,7 +40,7 @@ int main() {
     int sizeA = sizeof(A) / sizeof(A[0]);
     int sizeB = sizeof(B) / sizeof(B[0]);
 
-    insertionSort(A, sizeA);
+    bubbleSort(A, sizeA);
     bubbleSort(B, sizeB);
 
     int merged[sizeA + sizeB];
