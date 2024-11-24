@@ -7,7 +7,9 @@ int main(){
   cout << "Enter a word: ";
   cin >> word;
 
-  for(int i = 0 
+  for(int i = word.length() - 1; i >= 0; i--){
+    
+  }
 
   
 }
