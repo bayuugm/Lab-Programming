@@ -8,9 +8,6 @@ int main()
   long pi = 3.14159265;
   float expectedResult = 201.06;
 
-  cout << "Enter the radius of the circle: " << endl;
-  cin >> radius;
-
   area = pi * (radius*radius);
   cout << "Area of the circle: " << area << endl;
   
