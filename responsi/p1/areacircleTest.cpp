@@ -6,7 +6,7 @@ int main()
   double area; 
   float radius = 8;
   float pi = 3.14;
-  float expectedResult = 
+  float expectedResult = 201.06;
 
   cout << "Enter the radius of the circle: " << endl;
   cin >> radius;
