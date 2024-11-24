@@ -16,9 +16,9 @@ int main()
   
 
   if(expectedResult == area){
-    cout << "TEST SUCCESSFUL! << endl;
-      }else{
-    cout << "TEST UNSUCCESSFUL! << endl;
+    cout << "TEST SUCCESSFUL!" << endl;
+    }else{
+    cout << "TEST UNSUCCESSFUL!" << endl;
     }
 
   return 0;
