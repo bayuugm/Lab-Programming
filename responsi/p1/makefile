@@ -17,6 +17,6 @@ test: areacircleTest
       ./areacircleTest
 
 clean: 
-      rm -f 
+      rm -f areacircle.o areacircleTest.o areacircle.exe areacircleTest.exe
 
 
